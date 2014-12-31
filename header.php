@@ -31,17 +31,25 @@
 		<!--[if lt IE 9]>
 		          <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
 		<![endif]-->	
+		
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gilda+Display" type="text/css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sintony:400,700" type="text/css">
 	</head>
 	
 	<body <?php body_class(); ?>>
 				
 		<header role="banner">
-				
-			<div class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-          
-					<div class="navbar-header">
+		</header> <!-- end header -->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="<?php bloginfo('template_directory'); ?>/images/oaks-hero-unit.jpg" class="oaks-hero-unit">
+					</div>
+				</div>
+				<div class="navbar navbar-default" role="navigation">
+					<div class="navbar-header navbar-right">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -52,19 +60,9 @@
 
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
 						<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-
-						<?php //if(of_get_option('search_bar', '1')) {?>
-						<form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-							<div class="form-group">
-								<input name="s" id="s" type="text" class="search-query form-control" autocomplete="off" placeholder="<?php _e('Search','wpbootstrap'); ?>">
-							</div>
-						</form>
-						<?php //} ?>
 					</div>
-
-				</div> <!-- end .container -->
-			</div> <!-- end .navbar -->
+				</div> <!-- end .navbar -->
+			</div> <!-- end .container -->
 		
-		</header> <!-- end header -->
 		
 		<div class="container">
