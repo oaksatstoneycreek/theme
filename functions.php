@@ -225,10 +225,10 @@ function wp_bootstrap_comments($comment, $args, $depth) {
     <li <?php comment_class(); ?>>
         <article id="comment-<?php comment_ID(); ?>" class="clearfix">
             <div class="comment-author vcard clearfix">
-                <div class="avatar col-sm-3">
+                <div class="avatar col-sm-2">
                     <?php echo get_avatar( $comment, $size='75' ); ?>
                 </div>
-                <div class="col-sm-9 comment-text">
+                <div class="col-sm-10 comment-text">
                     <?php printf('<h4>%s</h4>', get_comment_author_link()) ?>
                     <?php edit_comment_link(__('Edit','wpbootstrap'),'<span class="edit-comment btn btn-sm btn-info"><i class="glyphicon-white glyphicon-pencil"></i>','</span>') ?>
 
