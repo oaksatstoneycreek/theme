@@ -6,7 +6,7 @@
                         <header>
                             <?php the_post_thumbnail( 'wpbs-featured' ); ?>
                             <h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1>
-                            <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+                            <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?></p>
                         </header> <!-- end article header -->
                         <section class="post_content clearfix" itemprop="articleBody">
                             <?php the_content(); ?>
