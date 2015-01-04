@@ -50,7 +50,11 @@
                     </div>
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
                         <?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+                        <div class="collapse navbar-collapse navbar-responsive-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><?php wp_register(); ?></li>
+                                <li><?php wp_loginout(); ?></li>
+                            </ul>
+                        </div>
                     </div>
                 </div> <!-- end .navbar -->
-            </div> <!-- end .container -->
-        <div class="container">
