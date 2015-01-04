@@ -1,8 +1,11 @@
 <?php get_header(); ?>
-            <div id="content" class="clearfix row">
-                <div id="main" class="col-sm-8 clearfix" role="main">
+            <div class="row">
+                <h1 class="col-sm-12">Neighborhood News</h1>
+            </div>
+            <div class="row" id="content">
+                <div id="main" class="col-sm-8" role="main">
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
                         <header>
                             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
                             <h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
